@@ -53,3 +53,8 @@ function mouseClicked() {
         gen[i].clicked();
     }
 }
+
+function getBest() {
+    gen.sort((a, b) => a.time_alive - b.time_alive);
+    return gen[0];
+}
